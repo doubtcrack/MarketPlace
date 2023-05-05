@@ -49,5 +49,5 @@
   "main": "tailwind.config.js",
   "author": "",
   "license": "ISC",
-  "proxy": "http://localhost:3001"
+  "proxy": "https://market-place.vercel.app:3001"
 }
