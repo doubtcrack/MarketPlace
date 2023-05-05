@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "cd server && npm install  && cd ../client && npm install && npm run build",
-    "server": "node server",
+    "build": "cd server && npm install && npm run build",
+    "server": "nodemon --quiet server",
     "client": "npm start --prefix client",
-    "start": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server"
   },
   "author": "",
   "license": "ISC",
